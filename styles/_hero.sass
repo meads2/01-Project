@@ -1,0 +1,100 @@
+// Hero Grid
+.site-info
+  position: fixed
+  width: 320px
+  height: 100vh
+  padding: 64px 0
+  top: 0
+  left: 230px
+
+.project-logo
+  display: block
+  margin: 40px 0
+  img
+    width: 320px
+    height: auto
+    margin: 0 auto
+    vertical-align: middle
+
+.mini-nav
+  margin: 0 auto
+  width: 100%
+  a
+    padding: 16px 40px
+    border-radius: 2px
+  .filled
+    background: $primary
+    color: #fff
+    margin-right: 16px
+    &:hover
+      background: darken($primary, 5%)
+  .outline
+    background: transparent
+    color: $primary
+    border: 1px solid $primary
+    &:hover
+      color: #fff
+      background: $primary
+
+.mini-footer
+  margin-top: 120px
+  border-top: 1px solid rgba(black,.1)
+  align-items: center
+  justify-content: center
+  height: 48px
+  width: 100%
+  a
+    color: rgba(black, .14)
+    &:hover
+      color: $primary
+
+// Section Main Header Styles
+.main-title
+  width: 100%
+  margin-bottom: 24px
+  &::after
+    display: block
+    width: 100px
+    height: 12px
+    background: $primary
+    content: ''
+.main-subtitle
+  width: 100%
+  font-size: 18px
+  text-align: center
+
+// Section Styles
+.section
+  height: 100vh
+  padding: 64px
+  position: relative
+  h2
+    width: 100px
+    text-align: center
+    letter-spacing: 1px
+    font-size: 18px
+    background: $primary
+    color: #fff
+    font-weight: 400
+
+
+// Main Title Slide
+.animated
+  width: 150px
+  position: absolute
+  bottom: 0
+  left: 50%
+  margin-left: -75px
+  font-size: 14px
+  text-align: center
+  animation: bounce 2s infinite ease-in-out
+
+// Particles Canvas
+#myCanvas
+  position: fixed
+  display: block
+  right: 0
+  top: 0
+  bottom: 100px
+  left: 0
+  z-index: -1
