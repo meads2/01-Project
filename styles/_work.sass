@@ -15,13 +15,30 @@
   img
     width: 600px
     height: auto
+  &:hover
+    animation: workImage 1s infinite ease-in-out
 
 .work-description
-  padding-right: 60px
+  padding: 0 60px
+  max-width: 480px
+
+// Navabr
+.inner-nav
+  position: absolute
+  top: 0
+  padding: 24px 0
+  a
+    color: #fff
+    margin-right: 16px
+    &:last-child
+      margin: 0
+    &:hover
+      text-decoration: underline
 
 // Background Colors
 .skype
   background: rgb(0,156,255)
+  position: relative
 .fb
   background: #f5f5f5
   color: #333
@@ -43,3 +60,14 @@
   color: #333
 .lg
   background: rgb(24,221,115)
+
+  // Work Image
+  @keyframes workImage
+    0%
+      transform: scale(1.1) rotate(15deg)
+    50%
+      transform: rotate(-15deg)
+    80%
+      transform: scale(.9)
+    100%
+      transform: scale(1)

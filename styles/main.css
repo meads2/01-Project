@@ -240,12 +240,38 @@ body {
   height: auto;
 }
 
+.work-image:hover {
+  -webkit-animation: workImage 1s infinite ease-in-out;
+          animation: workImage 1s infinite ease-in-out;
+}
+
 .work-description {
-  padding-right: 60px;
+  padding: 0 60px;
+  max-width: 480px;
+}
+
+.inner-nav {
+  position: absolute;
+  top: 0;
+  padding: 24px 0;
+}
+
+.inner-nav a {
+  color: #fff;
+  margin-right: 16px;
+}
+
+.inner-nav a:last-child {
+  margin: 0;
+}
+
+.inner-nav a:hover {
+  text-decoration: underline;
 }
 
 .skype {
   background: #009cff;
+  position: relative;
 }
 
 .fb {
@@ -285,4 +311,42 @@ body {
 
 .lg {
   background: #18dd73;
+}
+
+@-webkit-keyframes workImage {
+  0% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes workImage {
+  0% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
